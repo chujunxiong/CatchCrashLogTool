@@ -17,8 +17,8 @@ CatchCrashLogTool(CCTL) 是一个Android平台的Crash捕获和Log日志记录�
 ## 如何使用
 **可以先下载代码，在Android studio中以Android library的形式添加到项目中，修改相关的gradle文件然后编译即可**
 
-### 接下来就很简单了，在你项目中的LAUNCHER Activity中的attachBaseContext方法中添加一个链式调用即可
-### 就像下面这样：
+**接下来就很简单了，在你项目中的LAUNCHER Activity中的attachBaseContext方法中添加一个链式调用即可**
+**就像下面这样:**
 ```java
  protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(newBase);
