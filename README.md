@@ -1,5 +1,5 @@
 # CatchCrashLogTool
-CatchCrashLogTool(CCTL) 是一个Android平台的Crash捕获和Log日志记录工具，帮你更好发现并解决APP中的问题
+CatchCrashLogTool(CCLT) 是一个Android平台的Crash捕获和Log日志记录工具，帮你更好发现并解决APP中的问题
 
 ## 特点
 | 功能          | 说明          | 
