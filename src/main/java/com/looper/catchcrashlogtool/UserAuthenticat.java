@@ -8,20 +8,20 @@ public class UserAuthenticat {
     private String key;
     private String host;
     private int port;
-    private boolean isSSH;
+    private boolean isSSL;
     private static UserAuthenticat INSTANCE;
 
-    private UserAuthenticat(String username,String key,String host,int port,boolean isSSH ) {
+    private UserAuthenticat(String username,String key,String host,int port,boolean isSSL ) {
         this.useraddr = username;
         this.key = key;
         this.host = host;
         this.port = port;
-        this.isSSH = isSSH;
+        this.isSSL = isSSL;
     }
 
-    public static UserAuthenticat init(String username, String key, String host, int port, boolean isSSH){
+    public static UserAuthenticat init(String username, String key, String host, int port, boolean isSSL){
         if (INSTANCE == null) {
-            INSTANCE = new UserAuthenticat(username,key,host,port,isSSH);
+            INSTANCE = new UserAuthenticat(username,key,host,port,isSSL);
         }
         return  INSTANCE;
     }
@@ -42,8 +42,8 @@ public class UserAuthenticat {
         return port;
     }
 
-    public boolean getIsSSH() {
-        return isSSH;
+    public boolean getIsSSL() {
+        return isSSL;
     }
 
 
