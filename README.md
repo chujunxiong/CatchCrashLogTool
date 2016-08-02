@@ -14,7 +14,7 @@ CatchCrashLogTool(CCTL) 是一个Android平台的Crash捕获和Log日志记录�
 | 自定义缓存大小|默认大小10MB，超出后自动删除，节省空间|
 
 
-# 如何使用
+## 如何使用
 **可以先下载代码，在Android studio中以Android library的形式添加到项目中，修改相关的gradle文件然后编译即可**
 
 ### 接下来就很简单了，在你项目中的LAUNCHER Activity中的attachBaseContext方法中添加一个链式调用即可
@@ -29,7 +29,7 @@ CatchCrashLogTool(CCTL) 是一个Android平台的Crash捕获和Log日志记录�
 ```
 **当然，为了你的账户安全，你可以把账户名和密码先加密存储在本地，然后再需要时读取解密**
 
-### 最后，在你的项目中千万别忘了像下面这样申请权限：
+**最后，在你的项目中千万别忘了像下面这样申请权限:**
 ```java
  <uses-permission android:name="android.permission.INTERNET" />
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
