@@ -50,7 +50,7 @@ public class SendEmail {
             email.setHostName(userAuthenticat.getHost());
             email.setSmtpPort(userAuthenticat.getPort());
             email.setAuthenticator(new DefaultAuthenticator(userAuthenticat.getUseraddr(), userAuthenticat.getKey()));
-            email.setSSLOnConnect(userAuthenticat.getIsSSH());
+            email.setSSLOnConnect(userAuthenticat.getIsSSL());
             email.setFrom(userAuthenticat.getUseraddr());
             email.setSubject("Crash警报");
             email.setMsg("App 刚刚发生了一次Crash，可以下载附件查看崩溃详情");
