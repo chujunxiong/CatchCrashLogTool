@@ -45,10 +45,12 @@ public class IActivityManagerHandler implements InvocationHandler {
                 String[] infos = {packageName, className, msg, stack};
                 StringBuffer sb = CreateSB(infos);
                 if (!TextUtils.isEmpty(Cclt.crashinfo)) {
+					try {
                     String filePath = FileTool.CreateNewFile(Cclt.crashinfo, "Crash详情" + "_" + time);
                     if (!TextUtils.isEmpty(filePath)) {
                         FileTool.Data2File(sb.toString());
                     }
+					} catch(Exception e) {}
                 }
                 Log.i(TAG, "CrashInfo:  " + className + " " + msg);
             }
