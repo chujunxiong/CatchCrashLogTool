@@ -32,6 +32,8 @@ CatchCrashLogTool(CCLT) 是一个Android平台的Crash捕获和Log日志记录�
 **最后，在你的项目中千万别忘了像下面这样申请权限:**
 ```java
  <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+ <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
